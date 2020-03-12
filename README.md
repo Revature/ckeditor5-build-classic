@@ -70,3 +70,21 @@ ClassicEditor
 ## License
 
 Licensed under the terms of [GNU General Public License Version 2 or later](http://www.gnu.org/licenses/gpl.html). For full details about the license, please check the `LICENSE.md` file or [https://ckeditor.com/legal/ckeditor-oss-license](https://ckeditor.com/legal/ckeditor-oss-license).
+
+
+## Revature Plugin
+Copy the build folder and place a package.json in the `build` root
+package.json
+```json
+{
+    "name": "classic-editor",
+    "version": "17.0.0",
+    "main": "ckeditor.js",
+    "sideEffects": false
+}  
+```
+Compress the build into tar using
+
+`tar -zcvf ckeditor.tar.gz build/`
+
+Add the generated tar file in `admin-v2` root
