@@ -85,6 +85,6 @@ package.json
 ```
 Compress the build into tar using
 
-`tar -zcvf ckeditor.tar.gz build/`
+`tar -zcvf ckeditor-{VERSION}.tar.gz build/`
 
 Add the generated tar file in `admin-v2` root
